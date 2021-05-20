@@ -50,7 +50,7 @@ main .main-content .card{
     width: calc(100% / 3 - 40px);
     margin:20px;
     background-color: black;
-    min-height: 280px;
+    min-height: 320px;
     color: #fff;
     padding: 20px 30px;
     text-align: center;
