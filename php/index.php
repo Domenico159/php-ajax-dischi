@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dischi PHP</title>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="./style/main.css">
 </head>
@@ -42,6 +44,10 @@
         </div>
 
     </main>
+
+    <div class="collegamento">
+        <a href="../vue-js/index.html"><i class="fab fa-vuejs"></i></a>
+    </div>
 </body>
 
 </html>
