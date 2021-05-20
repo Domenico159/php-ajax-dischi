@@ -9,7 +9,7 @@
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Style -->
-    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="../style/main.css">
 </head>
 
 <body>
@@ -46,7 +46,10 @@
     </main>
 
     <div class="collegamento">
-        <a href="../vue-js/index.html"><i class="fab fa-vuejs"></i></a>
+        <a href="../vue-js/index.html">
+            <i class="fab fa-php"></i>
+        </a>
+        <h5>Click icon for change in VUE-JS</h5>
     </div>
 </body>
 

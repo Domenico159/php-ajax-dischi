@@ -54,6 +54,12 @@ main .main-content .card{
     color: #fff;
     padding: 20px 30px;
     text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+main .main-content .card:hover{
+    transform: scale(1.1);
 }
 
 main .main-content .card h6,
@@ -65,15 +71,21 @@ main .main-content .card h5{
     position: absolute;
     top: 100px;
     left: 50px;
-    background-color: #fff;
-    border-radius: 50%;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
 }
 
 .collegamento a{
-   padding: 80px 20px;
-   line-height: 80px;
    text-decoration: none;
    color: #182d3d;
+   background-color: #fff;
    font-size: 50px;
    text-align: center;
+   padding: 10px;
+   margin-bottom: 20px;
+   border-radius: 50%;
 }
