@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dischi PHP</title>
+    <title>Dischi Vue-js</title>
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- Style -->
@@ -22,25 +22,16 @@
 
     <!-- Main -->
 
-    <main>
+    <main id="main">
 
         <div class="container main-content">
 
-
-            <div class="card">
-                <img src="" alt="">
-                <h5>
-
-                </h5>
-                <h6>
-
-                </h6>
-                <h5>
-
-                </h5>
-                <h6>
-
-                </h6>
+            <div v-for="ele in albums" class="card">
+                <img :src="ele.poster" alt="">
+                <h5>{{ele.title}}</h5>
+                <h6>{{ele.author}}</h6>
+                <h5>{{ele.year}}</h5>
+                <h6>{{ele.genre}}</h6>
             </div>
 
         </div>
@@ -50,6 +41,15 @@
     <div class="collegamento">
         <a href="../php/index.php"><i class="fab fa-php"></i></a>
     </div>
+
+    <!-- Js -->
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- Main js -->
+    <script src="./js/main.js"></script>
+
 </body>
 
 </html>
