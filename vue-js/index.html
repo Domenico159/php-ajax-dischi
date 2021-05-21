@@ -21,7 +21,7 @@
                 <img src="../assets/logo.png" method=post alt="">
                 <div>
                     <label for="albums">Genere musicale :</label>
-                    <select v-model="valoreSelezionato" @change="changeGenre" name="albums" id="albums"
+                    <select v-model="valoreSelezionato" @change="changeGenre()" name="albums" id="albums"
                         form="album-select">
                         <option value="all">All</option>
                         <option value="Rock">Rock</option>

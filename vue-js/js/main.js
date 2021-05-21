@@ -25,7 +25,6 @@ const main = new Vue({
                 });
         },
         changeGenre() {
-            console.log(this.valoreSelezionato);
             this.getAlbum();
         },
     },
