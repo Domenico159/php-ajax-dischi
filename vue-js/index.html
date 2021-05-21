@@ -13,34 +13,48 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
-        <nav class="container">
-            <img src="../assets/logo.png" alt="">
-        </nav>
-    </header>
 
-    <!-- Main -->
+    <div id="main">
+        <!-- Header -->
+        <header>
+            <nav class="container">
+                <img src="../assets/logo.png" method=post alt="">
+                <div>
+                    <label for="albums">Genere musicale :</label>
+                    <select v-model="valoreSelezionato" @change="changeGenre" name="albums" id="albums"
+                        form="album-select">
+                        <option value="all">All</option>
+                        <option value="Rock">Rock</option>
+                        <option value="Pop">Pop</option>
+                        <option value="Metal">Metal</option>
+                        <option value="Jazz">Jazz</option>
+                    </select>
+                </div>
+            </nav>
+        </header>
 
-    <main id="main">
+        <!-- Main -->
 
-        <div class="container main-content">
+        <main>
 
-            <div v-for="ele in albums" class="card">
-                <img :src="ele.poster" alt="">
-                <h5>{{ele.title}}</h5>
-                <h6>{{ele.author}}</h6>
-                <h5>{{ele.year}}</h5>
-                <h6>{{ele.genre}}</h6>
+            <div class="container main-content">
+
+                <div v-for="ele in albums" class="card">
+                    <img :src="ele.poster" alt="">
+                    <h5>{{ele.title}}</h5>
+                    <h6>{{ele.author}}</h6>
+                    <h5>{{ele.year}}</h5>
+                    <h6>{{ele.genre}}</h6>
+                </div>
+
             </div>
 
+        </main>
+
+        <div class="collegamento">
+            <a href="../php/index.php"><i class="fab fa-vuejs"></i></a>
+            <h5>Click icon for change in PHP</h5>
         </div>
-
-    </main>
-
-    <div class="collegamento">
-        <a href="../php/index.php"><i class="fab fa-vuejs"></i></a>
-        <h5>Click icon for change in PHP</h5>
     </div>
 
     <!-- Js -->

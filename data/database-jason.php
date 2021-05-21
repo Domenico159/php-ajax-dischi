@@ -45,7 +45,26 @@ $database = [
     ]
 ];
 
+$filtered_array = [];
+
+$valueSelect = $_GET['select'];
+
+foreach ($database as $album) {
+    if ($album['genre'] == $valueSelect) {
+        $filtered_array[] = $album;
+    }
+}
+
+
+
 header('Content-Type: application/json');
 
 
-echo json_encode($database);
+
+
+
+if ($valueSelect == 'all') {
+    echo json_encode($database);
+} else {
+    echo json_encode($filtered_array);
+}

@@ -5,13 +5,14 @@ const main = new Vue({
     data: {
         url: window.href,
         albums: [],
+        valoreSelezionato: 'all',
     },
     created() {
         this.getAlbum()
     },
     methods: {
         getAlbum() {
-            const urlAlb = 'http://localhost/php-ajax-dischi/data/database-jason.php';
+            const urlAlb = `http://localhost/php-ajax-dischi/data/database-jason.php?select=${ this.valoreSelezionato }`;
 
             axios.get(urlAlb)
 
@@ -22,6 +23,10 @@ const main = new Vue({
                 .catch(err => {
                     console.log(err);
                 });
+        },
+        changeGenre() {
+            console.log(this.valoreSelezionato);
+            this.getAlbum();
         },
     },
 });
